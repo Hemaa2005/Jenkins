@@ -6,7 +6,7 @@ pipeline {
         REGISTRY = "docker.io"
         DOCKER_CREDENTIALS_ID = "DockerHub"
         GITHUB_CREDENTIALS_ID = "Github"
-        APP_DIR = "/opt/pipelines"
+        APP_DIR = "${WORKSPACE}"
     }
 
     stages {
